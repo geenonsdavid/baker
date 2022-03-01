@@ -13,17 +13,21 @@
     <title>Baker</title>
 </head>
 <div class="container p-0">
-
-    <body>
-        <header>
+<header>
             <?php include 'navbar.php'; ?>
-        </header>
+</header>
+    <body>
         <main>
             <?php include 'total.php'; ?>
             <?php include 'listArticle.php'; ?>
+            
         </main>
-
     </body>
+<footer>
+    <button type="button" class="floatingButton">
+                <img src="./icons/plus-circle.svg" height="50px" width="50px" alt="">
+    </button>
+</footer>    
 </div>
 
 </html>
