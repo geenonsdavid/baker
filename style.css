@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(240, 200, 142);
+}
+
+.bg-brown{
+    background-color: rgb(180, 134, 65);
+    
+}
+.border-brown{
+    border: 3px solid rgb(117, 88, 44);
+ }
+.title{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.name{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.montant{
+    text-align: center;
+}
+
+.round-corner{
+    border-radius: 30px;
+}
