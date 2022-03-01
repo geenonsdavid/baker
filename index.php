@@ -20,8 +20,7 @@
         </header>
         <main>
             <?php include 'total.php'; ?>
-            <?php include 'article.php'; ?>
-         
+            <?php include 'listArticle.php'; ?>
         </main>
 
     </body>
