@@ -1,19 +1,37 @@
-body{
+body, header, footer{
     background-color: rgb(240, 200, 142);
+}
+.bg-brown, .floatingButton{
+    background-color: rgb(180, 134, 65);
+}
+
+.border-brown, .floatingButton{
+    border: 3px solid rgb(117, 88, 44);
+ }
+header{
+    position:fixed;
+    top:0%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+main{
+    position:relative;
+    height: 70vh;
+    top: 130px;
+    overflow: scroll;
 }
 footer{
     position: fixed;
     width: 100%;
-    bottom: 10px;
-     text-align: center;
-}
-.bg-brown{
-    background-color: rgb(180, 134, 65);
+    height: 15%;
+    bottom: 0px;
+    text-align: center;
     
 }
-.border-brown{
-    border: 3px solid rgb(117, 88, 44);
- }
+
+
+
 .title{
     color: white;
     text-align: center;
@@ -33,7 +51,6 @@ footer{
 }
 .floatingButton{
     border-radius: 100%;
-    padding: 0%;
-    background-color: red;
-    
+    padding: 3%;
+     
 }
