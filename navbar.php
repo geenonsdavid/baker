@@ -1,4 +1,4 @@
-<nav class="row bg-brown">
+<nav class="w-100 row bg-brown gx-0">
                 <div class="col-4 ">
                     <button class="btn p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-circle-fill " viewBox="0 0 16 16">
