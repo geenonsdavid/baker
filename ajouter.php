@@ -20,10 +20,10 @@
         <?php include 'total.php'; ?>
     </header>
     <main>
-        <?php include 'listArticle.php'; ?>
+        Mettre le formulaire d'ajout d'article
     </main>
     <footer>
-        <?php include 'footer.php'; ?>
+        
     </footer>
 </body>
 
