@@ -20,7 +20,18 @@
         <?php include 'total.php'; ?>
     </header>
     <main>
-        formulaire de modification
+        <form action="#" method="get" class="need-validation text-center">
+        <label class="form-label d-block name" for="name"><?php echo "$_GET[name]"?></label>
+        <input type="hidden" name="name">
+        <label class="form-label d-block" for="name">Quantité :</label>
+        <input type="text" name="number" placeholder="<?php echo "$_GET[number]"?>">
+        <label class="form-label d-block" for="name">Prix/article :</label>
+        <input type="text" name="price" placeholder="<?php echo "$_GET[price]"?>">
+        <button type="submit" class="btn d-block mx-auto border-brown my-2 bg-brown">Validez</button>
+    </form>
+        <?php
+        
+         ?>
     </main>
     <footer>
         <?php include 'footer.php'; ?>
