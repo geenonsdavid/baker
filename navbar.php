@@ -1,3 +1,4 @@
+<?php $title = $_GET['title'] ?>
 <nav class="w-100 row bg-brown gx-0">
     <div class="col-4 ">
         <a class="btn p-2" href="javascript:history.back()" role="button">
@@ -10,7 +11,7 @@
     </div>
     <div class="col-4 text-center">
         <div class="row">
-            <h1 class="title">Achats</h1>
+            <h1 class="title"><?php echo $title ?></h1>
         </div>
         <div class="row">
 
