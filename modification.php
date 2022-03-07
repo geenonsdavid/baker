@@ -16,18 +16,20 @@
 
 <body>
     <header>
-        <?php include 'navbar.php'; ?>
+        <?php 
+        $_GET['title'] = 'Modification d\'un article';
+        include 'navbar.php'; ?>
         <?php include 'total.php'; ?>
     </header>
     <main>
-        <form action="#" method="get" class="need-validation text-center">
+        <form action="validModification.php" method="POST" class="need-validation text-center">
         <label class="form-label d-block name" for="name"><?php echo "$_GET[name]"?></label>
-        <input type="hidden" name="name">
-        <label class="form-label d-block" for="name">Quantité :</label>
-        <input type="text" name="number" placeholder="<?php echo "$_GET[number]"?>">
-        <label class="form-label d-block" for="name">Prix/article :</label>
-        <input type="text" name="price" placeholder="<?php echo "$_GET[price]"?>">
-        <button type="submit" class="btn d-block mx-auto border-brown my-2 bg-brown">Validez</button>
+        <input type="hidden" name="name" value="<?php echo "$_GET[name]"?>">
+        <label class="form-label d-block" for="number">Quantité :</label>
+        <input type="text" name="number" value="<?php echo "$_GET[number]"?>">
+        <label class="form-label d-block" for="price">Prix/article :</label>
+        <input type="text" name="price" value="<?php echo "$_GET[price]"?>">
+        <input type="submit" class="btn d-block mx-auto border-brown my-2 bg-brown" value="Validez">
     </form>
         <?php
         
