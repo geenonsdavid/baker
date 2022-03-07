@@ -1,4 +1,8 @@
-<?php include 'configuration.php' ?>
+<?php
+// parameter 
+$title = 'Ajouter un article';
+include 'configuration.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,14 +20,31 @@
 
 <body>
     <header>
-        <?php include 'navbar.php'; ?>
+
+        <?php
+        $_GET['title'] = $title;
+        include 'navbar.php'; ?>
         <?php include 'total.php'; ?>
     </header>
     <main>
-        Mettre le formulaire d'ajout d'article
+        <form action="validAjout.php" method="post">
+            <select name ="name" id ="name" class="form-select w-50 mx-auto" aria-label="Default select example">
+                <option selected>Choisir un article</option>
+                <?php
+                for ($i = 0; $i < count($articles); $i++) {
+                    $article = $articles[$i]['name'];
+                    echo "<option value=\"$article\">$article</option>";
+                }
+                ?>
+                
+            </select>
+            <label for="number">Quantité :</label>
+            <input type="number" name="number" id="number">
+            <input type="submit" value="Ajoutez" class ="bg-brown border-brown">
+        </form>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
