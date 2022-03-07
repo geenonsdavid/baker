@@ -1,4 +1,6 @@
-<?php include 'configuration.php' ?>
+<?php
+$title = 'Modification';
+include 'configuration.php' ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -17,7 +19,7 @@
 <body>
     <header>
         <?php 
-        $_GET['title'] = 'Modification d\'un article';
+        $_GET['title'] = $title;
         include 'navbar.php'; ?>
         <?php include 'total.php'; ?>
     </header>
