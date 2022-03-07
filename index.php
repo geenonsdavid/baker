@@ -1,4 +1,9 @@
-<?php include 'configuration.php' ?>
+<?php
+// parameter page
+$title = 'Achats';
+include 'configuration.php'
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,7 +21,9 @@
 
 <body>
     <header>
-        <?php include 'navbar.php'; ?>
+        <?php 
+        $_GET['title'] = $title;
+        include 'navbar.php'; ?>
         <?php include 'total.php'; ?>
     </header>
     <main>
