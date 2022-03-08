@@ -34,7 +34,7 @@ include 'configuration.php' ?>
             invalide!
         </div>
         <label class="form-label d-block" for="price">Prix/article :</label>
-        <input class="" type="number" name="price" value="<?php echo "$_GET[price]"?>" required>
+        <input class="" type="number" step="0.01" min="0" name="price" value="<?php echo "$_GET[price]"?>" required>
         <input type="submit" class="btn d-block mx-auto border-brown my-2 bg-brown" value="Validez">
     </form>
         <?php
