@@ -1,4 +1,6 @@
-<?php $title = $_GET['title'] ?>
+<?php
+$title = $_GET['title']
+?>
 <nav class="w-100 row bg-brown gx-0">
     <div class="col-4 ">
         <a class="btn p-2" href="index.php" role="button">
