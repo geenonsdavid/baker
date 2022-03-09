@@ -1,3 +1,4 @@
+<?php include_once 'data.php'; ?>
 <div class="col-11 mx-auto m-4 bg-brown border-brown round-corner">
 
   <h5 class="col px-2 text-center bg-white border-brown w-40 rounded-pill  position-absolute start-50 translate-middle"><?php echo $date ?></h5>
