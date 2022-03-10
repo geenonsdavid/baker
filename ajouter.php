@@ -10,9 +10,8 @@ include './layout/head.php';
         <select name="name" id="name" class="form-select w-50 mx-auto" aria-label="Default select example" required>
             <option selected></option>
             <?php
-            for ($i = 0; $i < count($articles); $i++) {
-                $article = $articles[$i]['name'];
-                echo "<option value=\"$article\">$article</option>";
+            foreach ($articles as $article) {
+                echo "<option value=\"$article[name]\">$article[name]</option>";
             }
             ?>
 
